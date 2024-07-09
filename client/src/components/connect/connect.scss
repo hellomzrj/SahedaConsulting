@@ -1,0 +1,97 @@
+.connect {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("./../assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  span {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 50px;
+    color: white;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .connect-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+
+      .buyer-connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 400px;
+        height: 260px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 20px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        h2 {
+          font-size: 36px;
+          margin: 0;
+          font-weight: bold;
+        }
+
+        .p {
+          font-size: 24px;
+        }
+      }
+      .buyer-connect:hover {
+        background: #fe00fd;
+        transform: scale(1.08);
+      }
+
+      .seller-connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 400px;
+        height: 260px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        h2 {
+          font-size: 36px;
+          margin: 5;
+          font-weight: bold;
+        }
+
+        .p {
+          font-size: 24px;
+        }
+      }
+      .seller-connect:hover {
+        background: #fe00fd;
+        transform: scale(1.08);
+      }
+    }
+  }
+}

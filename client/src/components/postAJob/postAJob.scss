@@ -1,0 +1,322 @@
+.post-a-job {
+  width: 100%;
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .job-title-section {
+      height: 100vh;
+      scroll-snap-align: center;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+
+      .title-left {
+        flex: 1;
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      .title-middle {
+        height: 300px;
+        width: 1px;
+        background: #a8a7a7;
+      }
+      .title-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 20px;
+
+        h3 {
+          font-size: 25px;
+        }
+        .input-box {
+          width: 100%;
+          height: 50px;
+          input {
+            height: 100%;
+            width: 100%;
+            font-size: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            outline: none;
+            padding: 1px 10px;
+          }
+        }
+        .example-titles {
+          h4 {
+            font-size: 20px;
+            margin: 20px 0;
+          }
+
+          .title {
+            margin-left: 30px;
+
+            li {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .skilled-required-section {
+      height: 100vh;
+      scroll-snap-align: center;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+
+      .skilled-required-left {
+        flex: 1;
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+          margin-bottom: 30px;
+        }
+      }
+      .skilled-required-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 20px;
+
+        h3 {
+          font-size: 25px;
+        }
+
+        .input-box {
+          width: 100%;
+          height: 50px;
+          input {
+            height: 100%;
+            width: 100%;
+            font-size: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            outline: none;
+            padding: 1px 10px;
+          }
+        }
+        .hint-skills {
+          font-size: 16px;
+        }
+        .popular-skill-add {
+          h4 {
+            font-size: 22px;
+            margin: 10px 0;
+          }
+          .skills {
+            display: flex;
+            gap: 10px;
+            align-content: flex-start;
+            flex-wrap: wrap;
+
+            span {
+              background: green;
+              padding: 10px;
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .duration-section {
+      height: 100vh;
+      scroll-snap-align: center;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      .duration-left {
+        flex: 1;
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      .duration-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 20px;
+        h3 {
+          font-size: 25px;
+        }
+        .input-box {
+          width: 100%;
+          height: 50px;
+          input {
+            height: 100%;
+            width: 100%;
+            font-size: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            outline: none;
+            padding: 1px 10px;
+          }
+        }
+        .hint-skills {
+          font-size: 16px;
+        }
+      }
+    }
+    .budget-section {
+      height: 100vh;
+      scroll-snap-align: center;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      .budget-section-left {
+        flex: 1;
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      .budget-section-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 20px;
+        h3 {
+          font-size: 25px;
+        }
+        .input-box {
+          width: 100%;
+          height: 50px;
+          input {
+            height: 100%;
+            width: 100%;
+            font-size: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            outline: none;
+            padding: 1px 10px;
+          }
+        }
+        .hint-example {
+          font-size: 16px;
+        }
+        .budget-not-select {
+          label {
+            font-size: 17px;
+            input {
+              margin-right: 10px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .job-description-section {
+      height: 100vh;
+      scroll-snap-align: center;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      .job-description-left {
+        flex: 1;
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        .example-need-to-write {
+          font-size: 15px;
+          margin-left: 25px;
+          li {
+            line-height: 20px;
+          }
+        }
+      }
+      .job-description-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 20px;
+        h3 {
+          font-size: 25px;
+        }
+        .input-box {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          textarea {
+            height: 100%;
+            width: 100%;
+            font-size: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            outline: none;
+            padding: 10px;
+          }
+          span {
+
+            font-size: 15px;
+          }
+        }
+        .attach-file {
+
+          span {
+            font-size: 15px;
+          }
+        }
+        .submit-btn{
+        
+          button {
+            float: right;
+            width: 150px;
+            height: 50px;
+            font-size: 22px;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

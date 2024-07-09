@@ -1,0 +1,103 @@
+@import "../../../css-config/mixins.scss";
+
+.Navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #111;
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .nav-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+
+            .nav-top-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .logo {
+                    font-size: 50px;
+                    color: whitesmoke;
+                    font-weight: 700;
+
+                }
+            }
+
+            .nav-top-right {
+                .arasp {
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    
+
+                    img {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+
+        .nav-bottom {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            margin-top: 15px;
+            .nav-bottom-left {
+                .menu-items {
+                    color: whitesmoke;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 30px;
+                    .menu-item {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .nav-bottom-right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                color: whitesmoke;
+
+                @include md {
+                    gap: 35px;
+                }
+
+                svg {
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+
+                .cart-icon {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        min-width: 20px;
+                        text-align: center;
+                        background-color: #8e2de2;
+                        padding: 2.5px;
+                        position: absolute;
+                        top: -5px;
+                        right: -12px;
+                        font-size: 12px;
+                        line-height: 1;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+@import "../../css-config/mixins.scss";
+
+.main-header {
+    width: 100%;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: rgb(9, 9, 9);
+    border-bottom: 1px, solid, rgba(0, 0, 0, 0.1);
+    z-index: 99;
+
+    @include md {
+        padding: 0 40px;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        max-height: 150px;
+        max-width: 1366px;
+        margin: 0 auto;
+
+        @include md {
+            height: 90px;
+            // justify-content: space-around;
+        }
+
+        .left {
+            font-size: 28px;
+            font-weight: 700;
+            cursor: pointer;
+
+            @include md {
+                font-size: 40px;
+                padding-right: 20px;
+                // left: 50%;
+                // transform: translate(-50%);
+            }
+            .logo{
+                width: 250px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .all-menu-items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            gap: 18px;
+            
+            @include lg {
+                flex-direction: row;
+            }
+            .center {
+                display: none;
+                list-style-type: none;
+                gap: 20px;
+
+                @include lg {
+                    display: flex;
+                    gap: 30px;
+                }
+
+                li {
+                    font-size: 16px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    padding: 0 20px;
+                }
+            }
+
+            .mobile-bar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                @include lg {
+                    display: none;
+                }
+                svg {
+                    font-size: 20px;
+                    color: rgb(31, 31, 31);
+                    // padding-left: 10px;
+                }
+                
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 22px;
+                margin-left: 25px;
+
+                @include md {
+                    gap: 20px;
+                    
+                }
+
+                svg {
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+
+                .cart-icon {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        min-width: 20px;
+                        text-align: center;
+                        background-color: #8e2de2;
+                        padding: 2.5px;
+                        position: absolute;
+                        top: -5px;
+                        right: -12px;
+                        font-size: 12px;
+                        line-height: 1;
+                        border-radius: 10px;
+                    }
+                }
+
+                .ar-asp-logo {
+                    width: 150px;
+                    height: 40px;
+                    display: none;
+
+                    @include md {
+                        width: 200px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.sticky-header {
+        position: sticky;
+        top: 0;
+        transform: translateY(-50px);
+        animation: stickyHeader 0.3s ease forwards;
+        opacity: 0.9;
+    }
+}
+
+@keyframes stickyHeader {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
